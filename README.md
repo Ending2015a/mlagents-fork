@@ -13,7 +13,7 @@ package.
 
 ## Installation
 
-Uninstall current installed `mlagents`, and install depenedncise:
+Uninstall current version of `mlagents` and `mlagents-envs`, and install depenedncise:
 ```sh
 pip uninstall -y mlagents mlagents-envs
 pip install mlagents-envs==0.27.0
