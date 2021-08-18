@@ -13,10 +13,10 @@ package.
 
 ## Installation
 
-Install the `mlagents` package with:
+Install this fork with:
 
 ```sh
-python -m pip install mlagents==0.27.0
+pip install git+https://github.com/Ending2015a/mlagents-fork.git@master
 ```
 
 ## Usage & More Information
