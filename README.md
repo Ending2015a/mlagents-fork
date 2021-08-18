@@ -13,7 +13,13 @@ package.
 
 ## Installation
 
-Install this fork with:
+Uninstall current installed `mlagents`, and install depenedncise:
+```sh
+pip uninstall -y mlagents mlagents-envs
+pip install mlagents-envs==0.27.0
+```
+
+Then, install this fork with:
 
 ```sh
 pip install git+https://github.com/Ending2015a/mlagents-fork.git@master
@@ -23,7 +29,7 @@ pip install git+https://github.com/Ending2015a/mlagents-fork.git@master
 
 This fork adds gradeint clipping to PPO and SAC to stablize training porcesses.
 
-You can set the max norm of the gradient cilpping in the `hyperpraametres` section of `config.yaml`
+You can set the max norm of the gradient cilpping in the `hyperparametres` section of `config.yaml`
 ```yaml
 hyperparameters:
   actor_clip_norm: 0.5
