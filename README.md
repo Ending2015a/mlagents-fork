@@ -21,9 +21,15 @@ pip install git+https://github.com/Ending2015a/mlagents-fork.git@master
 
 ## Usage & More Information
 
-For more information on the ML-Agents Toolkit and how to instrument a Unity
-scene with the ML-Agents SDK, check out the main
-[ML-Agents Toolkit documentation](../docs/Readme.md).
+This fork adds gradeint clipping to PPO and SAC to stablize training porcesses.
+
+You can set the max norm of the gradient cilpping in the `hyperpraametres` section of `config.yaml`
+```yaml
+hyperparameters:
+  actor_clip_norm: 0.5
+  critic_clip_norm: 0.5
+```
+
 
 ## Limitations
 
