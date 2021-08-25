@@ -646,6 +646,7 @@ class TorchSACOptimizer(TorchOptimizer):
             "Optimizer:q_network": self.q_network,
             "Optimizer:value_network": self._critic,
             "Optimizer:target_network": self.target_network,
+            "Optimizer:log_ent_coef": self._log_ent_coef,
             "Optimizer:policy_optimizer": self.policy_optimizer,
             "Optimizer:value_optimizer": self.value_optimizer,
             "Optimizer:entropy_optimizer": self.entropy_optimizer,
